@@ -1,0 +1,6 @@
+com\msa\mdm\api\MDMController.class
+com\msa\mdm\services\MDMService.class
+com\msa\mdm\MdmRestApiApplication.class
+com\msa\mdm\entity\ProductData.class
+com\msa\mdm\dao\ProductDataDao.class
+com\msa\mdm\services\MDMServiceImpl.class
