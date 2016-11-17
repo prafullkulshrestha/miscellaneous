@@ -2,9 +2,9 @@ package com.msa.mdm.services;
 
 import java.util.List;
 
-import com.msa.mdm.entity.ProductData;
+import com.msa.mdm.entity.ItemData;
 
 public interface MDMService {
 
-	List < ProductData >  getByItemDescription(String description);
+	List < ItemData >  getByItemDescription(String description);
 }

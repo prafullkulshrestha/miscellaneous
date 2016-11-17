@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
-import com.msa.mdm.entity.ProductData;
+import com.msa.mdm.entity.ItemData;
 import com.msa.mdm.services.MDMService;
 
 @RestController
@@ -23,8 +23,8 @@ public class MDMController {
 	MDMService mDMService;
 	
 	@RequestMapping(method = RequestMethod.GET, value="/protected/items/{description}")
-    public @ResponseBody List<ProductData> testUnprotected(@PathVariable  String description) throws JsonParseException, JsonMappingException, IOException {
-		List<ProductData> data = mDMService.getByItemDescription(description);
+    public @ResponseBody List<ItemData> testUnprotected(@PathVariable  String description) throws JsonParseException, JsonMappingException, IOException {
+		List<ItemData> data = mDMService.getByItemDescription(description);
         return data;
     }
 }
