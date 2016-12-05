@@ -1,0 +1,61 @@
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2016-12-03T14:03:44.769
+dn: ou=groups,dc=example,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: groups
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2016-12-03T14:03:45.654
+dn: ou=people,dc=example,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: people
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2016-12-03T14:03:47.152
+dn: uid=car,ou=people,dc=example,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Carlo Scarioni
+sn: Carlo
+uid: car
+userPassword: scarvarez
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2016-12-03T14:03:48.151
+dn: uid=mon,ou=people,dc=example,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Monica Alvarez
+sn: Monica
+uid: mon
+userPassword: scarvarez
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2016-12-03T14:03:49.271
+dn: cn=administrators,ou=groups,dc=example,dc=com
+objectclass: top
+objectclass: groupOfNames
+cn: administrators
+ou: administrator
+member: uid=mon,ou=people,dc=example,dc=com
+
+#!RESULT OK
+#!CONNECTION ldap://localhost:10389
+#!DATE 2016-12-03T14:03:50.811
+dn: cn=users,ou=groups,dc=example,dc=com
+objectclass: top
+objectclass: groupOfNames
+cn: users
+ou: user
+member: uid=car,ou=people,dc=example,dc=com

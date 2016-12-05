@@ -1,0 +1,43 @@
+dn: ou=groups,dc=example,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: groups
+
+dn: ou=people,dc=example,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: people
+
+dn: uid=car,ou=people,dc=example,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Carlo Scarioni
+sn: Carlo
+uid: car
+userPassword: scarvarez
+
+dn: uid=mon,ou=people,dc=example,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Monica Alvarez
+sn: Monica
+uid: mon
+userPassword: scarvarez
+
+dn: cn=administrators,ou=groups,dc=example,dc=com
+objectclass: top
+objectclass: groupOfNames
+cn: administrators
+ou: administrator
+member: uid=mon,ou=people,dc=example,dc=com
+
+dn: cn=users,ou=groups,dc=example,dc=com
+objectclass: top
+objectclass: groupOfNames
+cn: users
+ou: user
+member: uid=car,ou=people,dc=example,dc=com
