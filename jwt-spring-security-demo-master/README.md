@@ -4,10 +4,7 @@
 
 ##About
 This is just a simple demo for using **JWT (JSON Web Token)** with **Spring Security** and
-**Spring Boot**. This solution is partially based on the blog entry
-[REST Security with JWT using Java and Spring Security](https://www.toptal.com/java/rest-security-with-jwt-spring-security-and-java)
-and the demo project [Cerberus](https://github.com/brahalla/Cerberus). Thanks to the authors!
-
+**Spring Boot**. 
 ##Requirements
 This demo is build with with Maven and Java 1.8.
 
@@ -56,23 +53,3 @@ spring:
 
 You can find a reference of all application properties [here](http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html).
 
-##External resources
-
-Dan Vega (https://twitter.com/therealdanvega) created a video that explained this project quite fine. Thanks to him!
-
-https://youtu.be/mD3vmgksvz8
-
-##Creator
-
-**Stephan Zerhusen**
-
-* <https://twitter.com/stzerhus>
-* <https://github.com/szerhusenBC>
-
-##Copyright and license
-
-The code is released under the [MIT license](LICENSE?raw=true).
-
----------------------------------------
-
-Please feel free to send me some feedback or questions!
